@@ -4,7 +4,7 @@ import { nanoid } from 'nanoid';
 import ContactForm from 'components/ContactForm';
 import ContactList from 'components/ContactList';
 import Filter from 'components/Filter';
-import { Container } from 'components/Add.styled';
+import { Container, Title } from 'components/Add.styled';
 
 export class App extends Component {
   state = {
@@ -64,9 +64,9 @@ export class App extends Component {
     const { filter } = this.state;
     return (
       <Container>
-        <h1>Phone Book</h1>
+        <Title>Phone Book</Title>
         <ContactForm onSubmit={this.formSubmit} />
-        <h2>Contacts</h2>
+        <Title>Contacts</Title>
         <Filter
           title="Find contact by name"
           onChange={this.handleFilterChange}

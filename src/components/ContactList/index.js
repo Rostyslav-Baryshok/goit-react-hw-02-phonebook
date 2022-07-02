@@ -1,2 +1,2 @@
 export { default } from './ContactList';
-export { ContactItem } from './ContactItem';
+export { ContactItem } from '../ContactItem/ContactItem';
