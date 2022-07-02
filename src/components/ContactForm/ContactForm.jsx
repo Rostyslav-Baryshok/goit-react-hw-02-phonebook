@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Formik, Form, Field } from 'formik';
-
+import { Button, Wrapper, Label } from './ContactForm.styled';
 class ContactForm extends Component {
   state = {
     name: '',
@@ -23,8 +23,8 @@ class ContactForm extends Component {
     return (
       <Formik>
         <Form action="submit" onSubmit={this.handleSubmit}>
-          <div>
-            <label>
+          <Wrapper>
+            <Label>
               <span>Name</span>
               <Field
                 type="text"
@@ -35,8 +35,8 @@ class ContactForm extends Component {
                 value={name}
                 onChange={this.handleInputChange}
               />
-            </label>
-            <label>
+            </Label>
+            <Label>
               <span>Number</span>
               <Field
                 type="tel"
@@ -47,9 +47,10 @@ class ContactForm extends Component {
                 value={number}
                 onChange={this.handleInputChange}
               />
-            </label>
-            <button type="submit">Add contact</button>
-          </div>
+            </Label>
+
+            <Button type="submit">Add contact</Button>
+          </Wrapper>
         </Form>
       </Formik>
     );
