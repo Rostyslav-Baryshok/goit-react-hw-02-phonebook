@@ -70,13 +70,11 @@ export class App extends Component {
           <ContactForm onSubmit={this.formSubmit} />
         </Form>
         <Title>Contacts</Title>
-        {/* <FormFilter> */}
         <Filter
           title="Find contact by name"
           onChange={this.handleFilterChange}
           value={filter}
         />
-        {/* </FormFilter> */}
         <ContactList
           filtrationContacts={this.filtrationContacts(filter)}
           onDelete={this.contactDelete}

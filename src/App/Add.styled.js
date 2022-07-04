@@ -12,7 +12,3 @@ export const Title = styled.h2`
 `;
 
 export const Form = styled.div``;
-
-// export const FormFilter = styled.div`
-//   display: flex;
-// `;

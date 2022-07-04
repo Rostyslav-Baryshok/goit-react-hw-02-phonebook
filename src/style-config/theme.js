@@ -7,6 +7,7 @@ export const theme = {
     secondary: '#767676',
     accent: '#00e01d',
     devoted: '#009718',
+    delete: '#ff3333',
   },
   space: [0, 2, 4, 8, 16, 32, 64, 128, 256],
   fonts: {
