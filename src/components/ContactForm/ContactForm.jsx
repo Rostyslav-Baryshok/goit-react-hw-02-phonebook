@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Formik, Form, Field } from 'formik';
 import { Button, Wrapper, Label } from './ContactForm.styled';
-class ContactForm extends Component {
+
+export class ContactForm extends Component {
   state = {
     name: '',
     number: '',
@@ -56,4 +57,3 @@ class ContactForm extends Component {
     );
   }
 }
-export default ContactForm;

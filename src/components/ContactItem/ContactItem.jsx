@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { Container } from './ContactItem.styled';
 
-const ContactItem = ({ contact, onDelete }) => {
+export const ContactItem = ({ contact, onDelete }) => {
   const { id, name, number } = contact;
   return (
     <li>
@@ -30,5 +30,3 @@ ContactItem.propTypes = {
   }),
   onDelete: PropTypes.func.isRequired,
 };
-
-export { ContactItem };

@@ -1,10 +1,10 @@
 import { Component } from 'react';
 import { nanoid } from 'nanoid';
 
-import ContactForm from 'components/ContactForm';
-import ContactList from 'components/ContactList';
-import Filter from 'components/Filter';
-import { Container, Title } from 'components/Add.styled';
+import { ContactForm } from 'components/ContactForm';
+import { ContactList } from 'components/ContactList';
+import { Filter } from 'components/Filter';
+import { Container, Title } from 'App/Add.styled';
 
 export class App extends Component {
   state = {
@@ -16,12 +16,13 @@ export class App extends Component {
     ],
     filter: '',
   };
+
   handleFilterChange = e => {
     const { name, value } = e.currentTarget;
     this.setState({ [name]: value });
   };
 
-  filteredContacts = value => {
+  filtrationContacts = value => {
     const filterNormalize = value.toLowerCase();
 
     return this.state.contacts
@@ -73,7 +74,7 @@ export class App extends Component {
           value={filter}
         />
         <ContactList
-          filteredContacts={this.filteredContacts(filter)}
+          filtrationContacts={this.filtrationContacts(filter)}
           onDelete={this.contactDelete}
         />
       </Container>

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { Label } from './Filter.styled';
 
-const Filter = ({ title, value, onChange }) => {
+export const Filter = ({ title, value, onChange }) => {
   return (
     <Label>
       <span>{title}</span>
@@ -15,5 +15,3 @@ Filter.propTypes = {
   value: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
 };
-
-export default Filter;
