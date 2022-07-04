@@ -22,8 +22,8 @@ export class ContactForm extends Component {
   render() {
     const { name, number } = this.state;
     return (
-      <Formik>
-        <Form action="submit" onSubmit={this.handleSubmit}>
+      <Formik action="submit" onSubmit={this.handleSubmit}>
+        <Form>
           <Wrapper>
             <Label>
               <span>Name</span>
