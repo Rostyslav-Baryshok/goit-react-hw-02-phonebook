@@ -11,16 +11,16 @@ export const Item = styled.li`
 
 export const Button = styled.button`
   padding: 4px 5px;
-  border: none;
+  border: ${({ theme }) => theme.borders.none};
   border-radius: 4px;
   cursor: pointer;
-  box-shadow: 0px 0px 4px 2px #afafaf;
+  box-shadow: ${props => ` 0px 0px 4px 1px ${props.theme.colors.secondary}`};
   transition: all 0.3s ease;
   display: block;
   :hover {
     color: ${({ theme }) => theme.colors.light};
     background-color: ${({ theme }) => theme.colors.delete};
     transition: all 0.3s ease;
-    box-shadow: 0px 0px 2px 1px #212121;
+    box-shadow: ${props => `0px 0px 2px 1px ${props.theme.colors.secondary}`};
   }
 `;

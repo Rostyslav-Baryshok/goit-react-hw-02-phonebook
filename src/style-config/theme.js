@@ -4,10 +4,11 @@ export const theme = {
     light: '#fff',
     text: '#2a2a2a',
     primary: '#07c',
-    secondary: '#767676',
+    secondary: '#212121',
     accent: '#00e01d',
     devoted: '#009718',
     delete: '#ff3333',
+    shadowBow: ' #088e24;',
   },
   space: [0, 2, 4, 8, 16, 32, 64, 128, 256],
   fonts: {
