@@ -32,7 +32,7 @@ export class App extends Component {
       .sort((a, b) => a.name.localeCompare(b.name));
   };
 
-  formSubmit = ({ name, number }) => {
+  handleSubmit = ({ name, number }) => {
     this.setState(prevState => {
       const { contacts } = prevState;
       const isContact = contacts.find(contact => contact.name === name);
@@ -66,7 +66,7 @@ export class App extends Component {
     return (
       <Container>
         <h1>Phone Book</h1>
-        <ContactForm onSubmit={this.formSubmit} />
+        <ContactForm onSubmit={this.handleSubmit} />
         <h2>Contacts</h2>
         <Filter
           title="Find contact by name"
