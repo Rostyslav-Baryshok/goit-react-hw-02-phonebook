@@ -8,6 +8,7 @@ export const theme = {
     accent: '#00e01d',
     devoted: '#009718',
     delete: '#ff3333',
+    error: '#ff0000',
     shadowBow: ' #088e24;',
   },
   space: [0, 2, 4, 8, 16, 32, 64, 128, 256],
@@ -25,6 +26,7 @@ export const theme = {
   },
   fontWeights: {
     normal: 400,
+    preBold: 600,
     bold: 700,
   },
   lineHeights: {

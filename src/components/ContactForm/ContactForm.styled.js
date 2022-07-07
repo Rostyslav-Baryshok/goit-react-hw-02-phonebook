@@ -2,14 +2,14 @@ import styled from 'styled-components';
 
 export const Button = styled.button`
   cursor: pointer;
-  padding: 7px 5px;
-  border-radius: 9px;
+  padding: 6px 5px;
+  border-radius: 5px;
   border: none;
   box-shadow: ${props => ` 0px 0px 2px 1px ${props.theme.colors.secondary}`};
-
   transition: all 0.3s ease;
+  background-color: #9ef4a8;
   display: block;
-  margin: 15px auto;
+  margin: 0 auto;
   :hover {
     color: ${({ theme }) => theme.colors.light};
     background-color: ${({ theme }) => theme.colors.accent};
@@ -19,10 +19,17 @@ export const Button = styled.button`
 `;
 
 export const Label = styled.label`
-  margin-bottom: 10px;
+  font-size: ${({ theme }) => theme.fontSizes.xs};
+  color: ${({ theme }) => theme.colors.error};
+  font-weight: ${({ theme }) => theme.fontWeights.normal};
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 `;
 
-export const InputEl = styled.span`
-  display: flex;
-  justify-content: center;
+export const InputEl = styled.p`
+  font-size: ${({ theme }) => theme.fontSizes.m};
+  font-weight: ${({ theme }) => theme.fontWeights.preBold};
+  color: ${({ theme }) => theme.colors.text};
 `;

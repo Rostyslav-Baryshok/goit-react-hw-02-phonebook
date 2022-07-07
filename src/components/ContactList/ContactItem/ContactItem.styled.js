@@ -12,10 +12,11 @@ export const Item = styled.li`
 export const Button = styled.button`
   padding: 4px 5px;
   border: ${({ theme }) => theme.borders.none};
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
   box-shadow: ${props => ` 0px 0px 4px 1px ${props.theme.colors.secondary}`};
   transition: all 0.3s ease;
+  background-color: #ffbaba;
   display: block;
   :hover {
     color: ${({ theme }) => theme.colors.light};
