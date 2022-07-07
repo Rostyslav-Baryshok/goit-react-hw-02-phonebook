@@ -1,6 +1,5 @@
 export const theme = {
   colors: {
-    body: '#e3ffe1',
     light: '#fff',
     text: '#2a2a2a',
     primary: '#07c',
@@ -8,8 +7,10 @@ export const theme = {
     accent: '#00e01d',
     devoted: '#009718',
     delete: '#ff3333',
+    shadeDelete: '#ffbaba',
     error: '#ff0000',
-    shadowBow: ' #088e24;',
+    shadowBox: ' #088e24;',
+    add: '#9ef4a8',
   },
   space: [0, 2, 4, 8, 16, 32, 64, 128, 256],
   fonts: {

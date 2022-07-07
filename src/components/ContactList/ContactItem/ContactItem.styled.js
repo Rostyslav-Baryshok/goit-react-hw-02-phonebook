@@ -16,7 +16,7 @@ export const Button = styled.button`
   cursor: pointer;
   box-shadow: ${props => ` 0px 0px 4px 1px ${props.theme.colors.secondary}`};
   transition: all 0.3s ease;
-  background-color: #ffbaba;
+  background-color: ${({ theme }) => theme.colors.shadeDelete};
   display: block;
   :hover {
     color: ${({ theme }) => theme.colors.light};

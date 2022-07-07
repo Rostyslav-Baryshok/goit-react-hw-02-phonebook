@@ -7,14 +7,15 @@ export const Button = styled.button`
   border: none;
   box-shadow: ${props => ` 0px 0px 2px 1px ${props.theme.colors.secondary}`};
   transition: all 0.3s ease;
-  background-color: #9ef4a8;
+  background-color: ${({ theme }) => theme.colors.add};
+
   display: block;
   margin: 0 auto;
   :hover {
     color: ${({ theme }) => theme.colors.light};
     background-color: ${({ theme }) => theme.colors.accent};
     transition: all 0.3s ease;
-    box-shadow: ${props => ` 0px 0px 2px 1px ${props.theme.colors.shadowBow}`};
+    box-shadow: ${props => ` 0px 0px 2px 1px ${props.theme.colors.shadowBox}`};
   }
 `;
 
